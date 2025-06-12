@@ -1,0 +1,21 @@
+package d5_6_2025_day_three;
+import java.util.*;
+//Write a program input number is positive or negative
+public class d6_pos_or_neg {
+	public static void main(String args[])
+	{
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter the number");
+		int num = scan.nextInt();
+		if(num>=0)
+		{
+			System.out.println("positive");
+		}
+		else
+		{
+			System.out.println("negative");
+		}
+		
+	}
+
+}
