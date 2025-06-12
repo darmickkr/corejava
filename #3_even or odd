@@ -1,0 +1,23 @@
+package d5_6_2025_day_three;
+import java.util.*;
+public class d7_even_or_odd {
+	//Check the given number is even or odd
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Enter the number");
+		Scanner scan= new Scanner(System.in);
+		
+		int num = scan.nextInt();
+		if(num%2==0)
+		{
+			System.out.println("even");
+		}
+		else
+		{
+			System.out.println("odd");
+		}
+
+	}
+
+}
