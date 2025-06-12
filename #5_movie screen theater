@@ -1,0 +1,92 @@
+package s3;
+import java.util.Scanner;
+
+public class moviescreen {
+	public static void main(String args[])
+	{
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter your screen number are 1,2,3,4:"+" ");
+		int screen =scan.nextInt(); 
+		scan.nextLine();
+		System.out.println("Enter your timing such as are  7-10, 10-1, 1-4:");
+		String timing = scan.nextLine();
+		
+		switch(screen)
+		{
+		case 1:
+			switch(timing)
+			{
+			case "7-10":
+				System.out.println("Spider-verse");
+				break;
+			case "10-1":
+				System.out.println("Demon slayer");
+				break;
+			case "1-4":
+				System.out.println("One piece");
+				break;
+			default:
+				System.out.println("No timing available");
+				break;
+			}
+			break;
+		case 2:
+			switch(timing)
+			{
+			case "7-10":
+				System.out.println("Superman");
+				break;
+			case "10-1":
+				System.out.println("harry potter");
+				break;
+			case "1-4":
+				System.out.println("the boys");
+				break;
+			default:
+				System.out.println("No timing available");
+				break;
+			}
+			break;
+		case 3:
+			switch(timing)
+			{
+			case "7-10":
+				System.out.println("avergers the doom");
+				break;
+			case "10-1":
+				System.out.println("the praise of fool");
+				break;
+			case "1-4":
+				System.out.println("Mr.robot");
+				break;
+			default:
+				System.out.println("No timing available");
+				break;
+			}
+			break;
+		case 4:
+			switch(timing)
+			{
+			case "7-10":
+				System.out.println("the lion king");
+				break;
+			case "10-1":
+				System.out.println("the sword king master");
+				break;
+			case "1-4":
+				System.out.println("your name");
+				break;
+			default:
+				System.out.println("No timing available");
+				break;
+			}
+			break;
+		default:
+			System.out.println("No screen avaliable");
+			break;
+			}
+		
+		}
+	}
+
+
