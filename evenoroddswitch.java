@@ -1,0 +1,25 @@
+package s3;
+
+import java.util.Scanner;
+
+public class evenoroddswitch {
+	public static void main(String args[])
+	{
+		System.out.println("Enter the number");
+		Scanner scan= new Scanner(System.in);
+		int num = scan.nextInt();
+		int sum = num % 2;
+		switch(sum)
+		{
+			case 0:
+				if(sum == 0)
+			    System.out.println("even");
+			break;
+		default:
+		{
+			System.out.println("Invalid");
+		}
+		
+		}
+	}
+}
