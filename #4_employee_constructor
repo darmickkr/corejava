@@ -1,0 +1,35 @@
+package s3;
+
+//Write a program to print employee id, employee name, employee destination employee location, 
+//Printing 5 object
+public class employee {
+	int id;
+	String name;
+	String destination;
+	String location;
+	
+	employee (int i1,String n1,String d1,String l1)
+	{
+		id = i1;
+		name = n1;
+		destination = d1;
+		location =l1;
+	}
+	public void employeedetails()
+	{
+		System.out.println("id:"+" "+id+" "+"name:"+" "+name+" "+"destination:"+" "+destination+" "+"location:"+" "+location);	
+	}
+	public static void main (String args[])
+	{
+		employee emp1 = new employee(101, "Alice", "Manager", "New York");
+        employee emp2 = new employee(102, "Bob", "Developer", "San Francisco");
+        employee emp3 = new employee(103, "Charlie", "Analyst", "Chicago");
+        employee emp4 = new employee(104, "David", "Designer", "Seattle");
+        employee emp5 = new employee(105, "Eve", "HR", "Boston");
+        emp1.employeedetails();
+        emp2.employeedetails();
+        emp3.employeedetails();
+        emp4.employeedetails();
+	}
+
+}
