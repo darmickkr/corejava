@@ -1,0 +1,25 @@
+package d5_6_2025_day_three;
+import java.util.*;
+public class d5_control_statement {
+	
+	public static void main(String args[])
+	{
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter your age");
+		int age = scan.nextInt();
+	    scan.nextLine();
+		System.out.println("Enter your country");
+		String con = scan.nextLine();
+		String country = "Indian";
+		if((age>=18)&& (con==country))
+		{
+			System.out.println("Eligible your vote");	
+		}
+		else 
+		{
+			System.out.println("Not eligible for vote");
+		}
+		
+	}
+
+}
