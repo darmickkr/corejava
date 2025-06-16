@@ -1,0 +1,41 @@
+package s6_13_6_2025;
+
+//Write a Java program to create a class called Car with instance variables make, model, and year. 
+//Implement a parameterized constructor that initializes these variables and 
+//assigns default values if not provided.
+//Print the values of the variables.
+
+
+
+public class Construct_Ex {
+	String make;
+	String model;
+	int year;
+	Construct_Ex(String m1, String mo1, int y1)
+	{
+		make = m1;
+		model = mo1;
+		year = y1;
+	}
+	Construct_Ex()
+	{
+		make = "Audi";
+		model = "Audi";
+		year = 2000;
+	}
+	void display()
+	{
+		System.out.println(make +" "+ model+" "+year);
+	}
+	public static void main(String args[])
+	{
+		Construct_Ex obj1 = new Construct_Ex("bmw","bmw",2001);
+		Construct_Ex obj2 = new Construct_Ex();
+		obj1.display();
+		obj2.display();
+
+		
+	}
+	
+
+}
