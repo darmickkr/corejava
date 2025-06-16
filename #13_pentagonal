@@ -1,0 +1,22 @@
+package s6_13_6_2025;
+//Write a Java method to display the first 50 pentagonal numbers.
+//Note: A pentagonal number is a figurate number that extends the concept of triangular and square numbers to the pentagon, but, 
+//unlike the first two, the patterns involved in the construction of pentagonal numbers are not rotationally symmetrical.
+public class Pentagonal {
+	public static void main(String args[])
+	{
+//		int pentagonal = (n *(3n-1)) / 2;
+		for (int n = 1; n<=50;n++)
+		{
+			int pentagonal = n *(3*n-1)/ 2;
+			System.out.println("pentatongal number:"+" "+pentagonal+" ");
+			if(n%10 == 0)
+			{
+				System.out.println();
+			}
+
+		}
+	}
+	
+
+}
