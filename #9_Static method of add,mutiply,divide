@@ -1,0 +1,42 @@
+//Write a java program to implement static method called add mutiply and divide  to use both static and non static variables like a, b, c
+
+package s6_13_6_2025;
+
+//Write a java program to implement static method called add mutiply 
+//and divide  to use both static and
+//non static variables like a, b, c
+public class StaticMethod {
+	static int ab = 10;
+	static int bc = 20;
+	int ca = 30;
+	static int add(int a, int b)
+	{
+		int f = a + b +ab;
+		return f;
+	}
+	static int mutiply(int a , int b)
+	{
+		int d = a*b*ab;
+		return d;
+	}
+	static int divide(int a, int b)
+	{
+		int e = (a+b) / bc;
+		return e;
+
+	}
+	public static void main(String args[])
+	{
+		StaticMethod obj = new StaticMethod();
+		System.out.println("add:"+" "+	add(5,3));
+		System.out.println("mutiply:"+" "+mutiply(10,50));
+		System.out.println("divide:"+" "+divide(5,8));
+//		add(5,3);
+//		mutiply(10,50);
+//		divide(5,8);
+
+
+		
+	}
+
+}
