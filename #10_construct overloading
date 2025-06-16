@@ -1,0 +1,47 @@
+//Write a java program to implement construtor overloading , 
+//one parameter next with two paremeter,
+//next with three paramenter anything
+
+package s6_13_6_2025;
+//Write a java program to implement construtor overloading , 
+//one parameter next with two paremeter,
+//next with three paramenter anything
+public class ConstructOverload_Example {
+	private int employeeid, employeeage;
+	private String employeename;
+	
+	ConstructOverload_Example(int i, String n)
+	{
+		employeeid = i;
+		employeename = n;
+	}
+	ConstructOverload_Example(int i,int a, String n)
+	{
+		employeeid = i;
+		employeeage = a;
+		employeename = n;
+	}
+	ConstructOverload_Example(int i)
+	{
+		employeeid = i;
+	}
+	void display()
+	{
+		System.out.println("emplyee_id:"+" "+employeeid+","+"employee_age:"+" "+employeeage+","+"employee_name:"+" "+employeename);
+	}
+	
+	public static void main(String args[])
+	{
+	ConstructOverload_Example obj1 = new ConstructOverload_Example(101,20,"iman gadzi");
+	ConstructOverload_Example obj2 = new ConstructOverload_Example(101,"gadzi");
+	ConstructOverload_Example obj3 = new ConstructOverload_Example(102);
+	obj1.display();
+	obj2.display();
+	obj3.display();
+	
+
+
+	
+	}
+
+}
