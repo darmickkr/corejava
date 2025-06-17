@@ -1,0 +1,27 @@
+package s6_13_6_2025;
+//Write a program to implement method overloading 
+//by using the method print to display employee id,
+//name, age, location
+
+public class Poly_Method_Overloading {
+	void employee(int id)
+	{
+		System.out.println("Employee id:"+" "+id);
+	}
+	void employee(int id, String name)
+	{
+		System.out.println("Employee id:"+" "+id+","+"Employee name:"+" "+name);
+	}
+	void employee(int id, String name,int age, String location)
+	{
+		System.out.println("Employee id:"+" "+id+","+"Employee name:"+" "+name+","+"Emplyee age:"+" "+age+","+"Emplouee location:"+","+location);
+
+	}
+	public static void main(String args[])
+	{
+		Poly_Method_Overloading obj = new Poly_Method_Overloading();
+		obj.employee(101);
+		obj.employee(101,"leo");
+	}
+
+}
